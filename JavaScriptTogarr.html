@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+	<TITLE> JavaScript Togar </TITLE>
+</HEAD>
+
+<SCRIPT language="JavaScript">
+
+	function jumlah() {
+ 		var bil1 = parseFloat(document.form.angka1.value);
+ 		if (isNaN (bil1))
+   			bil1=0.0;
+ 		var bil2 = parseFloat(document.form.angka2.value);
+ 		if (isNaN (bil2))
+   			bil2=0.0;
+ 		var hasil = bil1 + bil2;
+ 	alert ("Hasil Penjumlahan = " + hasil);
+	}
+</SCRIPT>
+
+<BODY BGCOLOR= "LAVENDER" >
+	<H2><BR> PENJUMLAHAN BILANGAN JAVASCRIPT HTML TOGAR </H2>
+
+<FORM NAME ="form">
+	&nbsp;
+	Masukkan Bilangan Pertama <input type="text" name="angka1" size="15">
+	<BR> <BR>
+	&nbsp;
+	Masukkan Bilangan Kedua &nbsp; <input type="text" name="angka2" size="15">
+<P>
+<INPUT TYPE="button" value="Hitung" onclick="jumlah()">
+<INPUT TYPE="reset" value="Ulang">
+</FORM>  
+</BODY>
+</HTML>
